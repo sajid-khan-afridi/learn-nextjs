@@ -5,10 +5,7 @@ export default function Footer() {
   return (
     <>
       <nav className="mt-5">
-        <Link
-          className="bg-blue-500 mr-5 text-white font-bold py-2 px-4 rounded"
-          href="/"
-        >
+        <Link className="btn btn-blue" href="/">
           Home
         </Link>
         <Link
