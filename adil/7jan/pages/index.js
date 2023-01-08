@@ -1,7 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
+const YourComponent = () => (
+  <Image src="/images/profile.jpg" height={100} width={100} />
+);
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -15,7 +19,7 @@ export default function Home() {
           Learn <Link href="/post/first-post">This page</Link>
           Learn <Link href="/post">This page</Link>
         </h1>
-
+        <YourComponent />
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
         </p>
