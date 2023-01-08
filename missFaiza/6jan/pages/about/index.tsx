@@ -4,7 +4,7 @@ export default function index() {
   return (
     <>
       <Header />
-      <div>about</div>
+      <div>about page</div>
     </>
   );
 }
