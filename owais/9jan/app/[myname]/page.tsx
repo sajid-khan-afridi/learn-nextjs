@@ -4,7 +4,7 @@ export default function MyName({param}:{param:{myname:string}}) {
   return (
     <div>
 
-        console.log(param)
+   this is from url {param}
     </div>
   )
 }
