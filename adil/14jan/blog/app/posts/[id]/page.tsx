@@ -8,7 +8,7 @@ async function getPost(id: number) {
 }
 
 export default function generateStaticParams({
-  params,
+  params
 }: {
   params: { id: number };
 }) {
