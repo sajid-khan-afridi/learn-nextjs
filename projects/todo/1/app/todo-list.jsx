@@ -1,3 +1,5 @@
+import Todo from "./todo";
+
 const getTodos = async () => {
   let todos = await fetch("http://localhost:3001/api/todo/list");
   return todos.json();
@@ -19,9 +21,7 @@ export default async function TodoList() {
       <ul style={{ listStyleType: "none", padding: 0 }}>
         {todos.map((t) => (
           <li key={t.id} style={{ padding: "5px 0" }}>
-            <input type="checkbox" />
-            {t.name}
-            <button>Delete</button>
+            <Todo todo={t} />
           </li>
         ))}
       </ul>
