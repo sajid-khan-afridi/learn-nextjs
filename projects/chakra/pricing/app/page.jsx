@@ -1,10 +1,12 @@
 "use client";
-import { Button } from "@chakra-ui/react";
+import Header from "@/components/header";
+import Pricing from "@/components/pricing";
 
 export default function Home() {
   return (
     <div>
-      <Button colorScheme="blue">Hello World from Panaverse DAO!</Button>
+      <Header />
+      <Pricing />
     </div>
   );
 }
