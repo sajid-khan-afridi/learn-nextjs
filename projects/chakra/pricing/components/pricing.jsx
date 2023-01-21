@@ -13,7 +13,7 @@ export const ListItem=(StackProps)=>{
 
 export default function Pricing() {
   return (
-    <Box boxShadow='dark-lg' maxW="994px" margin="auto" mt="-256px"  borderRadius="12px" overflow="hidden" >
+    <Box maxW="994px" margin="auto" mt="-256px"  borderRadius="12px" overflow="hidden" boxShadow='0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)' >
       <Flex>
         <Box  p="60px" textAlign="center" bg="#F0EAFB" h="250px">
           <Text mt="57px" fontWeight="800" fontSize="24px" color="#171923">
