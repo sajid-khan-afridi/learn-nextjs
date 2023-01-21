@@ -2,6 +2,7 @@ import { Box, Center, Heading, Text } from "@chakra-ui/react";
 
 export default function Header() {
   return (
+    <Box pb="112px" as="section">
     <Box
       as="section"
       color="#F7FAFC"
@@ -21,6 +22,7 @@ export default function Header() {
       <Text fontWeight="500" fontSize="24px" pt="16px">
         Plans that are carefully crafted to suit your business.
       </Text>
+    </Box>
     </Box>
   );
 }
