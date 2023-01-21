@@ -1,4 +1,5 @@
 "use client";
+import Features from "@/components/features";
 import Header from "@/components/header";
 import Pricing from "@/components/pricing";
 
@@ -7,6 +8,7 @@ export default function Home() {
     <div>
       <Header />
       <Pricing />
+      <Features />
     </div>
   );
 }
