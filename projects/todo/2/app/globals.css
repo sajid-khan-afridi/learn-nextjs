@@ -1,0 +1,11 @@
+/* * {
+  padding: 0px;
+  margin: 0px;
+} */
+.list {
+  padding: 10px 5px;
+}
+.addtodo {
+  padding: 40px 50px;
+  /* margin: 10px 5px; */
+}
