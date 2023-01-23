@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav style={{ padding: "0px 10px" }}>
+    <nav className="container">
       <Link style={{ padding: "0px 5px" }} href="/">
         Home
       </Link>
