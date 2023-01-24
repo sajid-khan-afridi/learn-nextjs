@@ -1,20 +1,35 @@
-"use client"
+"use client";
 
-async function update(id, isDone) {
-  await fetch(`http://localhost:3001/api/todo/update`, {
+import { useRouter } from "next/navigation";
+
+async function update(id, isDone, refresh) {
+  await fetch(`/api/todo/update`, {
     method: "POST",
     body: JSON.stringify({ id, isDone }),
   });
+  refresh();
 }
-export default function Todo({todo}) {
 
+async function deleteTodo(id, refresh) {
+  await fetch(`/api/todo/delete?id=${id}`, {
+    method: "DELETE",
+  });
+  refresh();
+}
+
+export default function Todo({ todo }) {
+  const router = useRouter();
   return (
     <div>
-      <input type="checkbox" onChange={(e)=>{
-        update(todo.id,e.target.checked)
-      }}/>
-      {todo.name}
-      <button>Delete</button>
+      <input
+        type="checkbox"
+        onChange={(e) => update(todo.id, e.target.checked, router.refresh)}
+        checked={todo.isDone}
+      />
+      <span>{todo.name}</span>
+      <button onClick={() => deleteTodo(todo.id, router.refresh)}>
+        Delete
+      </button>
     </div>
   );
 }
