@@ -2,15 +2,57 @@
 import { useState } from "react";
 
 export default function Todo() {
-  const [todo, setTodo] = useState([
-    { totext: "todo 1", isDone: false },
-    { totext: "todo 2", isDone: false },
+  const [todos, setTodos] = useState([
+    { totext: "todo 1", completed: true },
+    { totext: "todo 2", completed: false },
+    { totext: "todo 3", completed: true },
+    { totext: "todo 4", completed: false },
   ]);
+  const onClickHandler = (ele: any) => {
+    // console.log(ele);
+    const newtodos = todos.map((todo) => {
+      if (todo.totext == ele.totext) {
+        todo.completed = !todo.completed;
+      }
+      return todo;
+    });
+    setTodos(newtodos);
+    // console.log(newtodos);
+  };
+  //for add and input
+  const [todo, setTodo] = useState("");
+  const addTodo = () => {
+    const newTodo = { totext: todo, completed: false };
+    const newTodos = [...todos, newTodo];
+    setTodos(newTodos);
+  };
   return (
     <div>
-      <ul>
-        {todo.map((ele) => {
-          return <li key={ele.totext}>{ele.totext}</li>;
+      <div>
+        <input
+          type={"text"}
+          value={todo}
+          onChange={(e) => {
+            setTodo(e.target.value);
+          }}
+        />
+        <button onClick={addTodo}>add</button>
+      </div>
+      <ul style={{ listStyleType: "none" }}>
+        {todos.map((ele) => {
+          return (
+            <li
+              style={{ color: ele.completed ? "green" : "blue" }}
+              key={ele.totext}
+            >
+              <input
+                type="checkbox"
+                checked={ele.completed}
+                onClick={() => onClickHandler(ele)}
+              />
+              {ele.totext}
+            </li>
+          );
         })}
       </ul>
     </div>
