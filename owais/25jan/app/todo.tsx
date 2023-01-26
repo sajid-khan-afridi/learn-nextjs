@@ -25,6 +25,11 @@ export default function Todo() {
     const newTodo = { totext: todo, completed: false };
     const newTodos = [...todos, newTodo];
     setTodos(newTodos);
+
+    //for delete todo
+    const deleteTodo = (elem: any) => {
+      const newTodos = todos.filter;
+    };
   };
   return (
     <div>
@@ -48,9 +53,10 @@ export default function Todo() {
               <input
                 type="checkbox"
                 checked={ele.completed}
-                onClick={() => onClickHandler(ele)}
+                onChange={() => onClickHandler(ele)}
               />
               {ele.totext}
+              <button>Delete</button>
             </li>
           );
         })}
