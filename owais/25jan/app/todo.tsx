@@ -25,11 +25,17 @@ export default function Todo() {
     const newTodo = { totext: todo, completed: false };
     const newTodos = [...todos, newTodo];
     setTodos(newTodos);
-
-    //for delete todo
-    const deleteTodo = (elem: any) => {
-      const newTodos = todos.filter;
-    };
+    setTodo(""); //to empty the text box
+  };
+  //for delete todo
+  const deleteTodo = (elem: any) => {
+    const newTodos = todos.filter((todo) => {
+      console.log(elem);
+      if (todo.totext == elem.totext) return false;
+      return true;
+    });
+    setTodos(newTodos);
+    console.log("old todos", todos, "newtodos", newTodos);
   };
   return (
     <div>
@@ -56,7 +62,7 @@ export default function Todo() {
                 onChange={() => onClickHandler(ele)}
               />
               {ele.totext}
-              <button>Delete</button>
+              <button onClick={() => deleteTodo(ele)}>Delete</button>
             </li>
           );
         })}
