@@ -1,11 +1,16 @@
 "use client";
 
-import { Button } from "@chakra-ui/react";
+import AddTodo from "@/components/AddTodo";
+import TodoList from "@/components/TodoList";
+import Top from "@/components/Top";
+import { VStack } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <div>
-      <Button colorScheme="blue">Hello World from Panaverse DAO!</Button>
-    </div>
+    <VStack p={4}>
+      <Top />
+      <TodoList />
+      <AddTodo />
+    </VStack>
   );
 }
