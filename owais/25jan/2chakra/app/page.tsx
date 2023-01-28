@@ -1,12 +1,16 @@
-import React1 from "./react1";
-import Todo from "./todo";
+"use client";
 
-export default function Page() {
+import AddTodo from "@/components/AddTodo";
+import TodoList from "@/components/TodoList";
+import Top from "@/components/Top";
+import { VStack } from "@chakra-ui/react";
+
+export default function Home() {
   return (
-    <div>
-      {/* <React1 /> */}
-      <Todo />
-      <></>
-    </div>
+    <VStack p={4}>
+      <Top />
+      <TodoList />
+      <AddTodo />
+    </VStack>
   );
 }

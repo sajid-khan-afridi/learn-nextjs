@@ -4,9 +4,9 @@ function AddTodo() {
   function handleSubmit(e: any) {}
   return (
     <form onSubmit={handleSubmit}>
-      <HStack>
+      <HStack mt="8">
         <Input variant="filled" placeholder="add your todo" />
-        <Button p={4} colorScheme="teal" variant="outline">
+        <Button px="8" colorScheme="pink" type="submit">
           Add Todo
         </Button>
       </HStack>
