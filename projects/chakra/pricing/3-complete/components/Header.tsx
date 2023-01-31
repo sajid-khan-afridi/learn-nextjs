@@ -10,7 +10,7 @@ export default function Header() {
     <Box
       bg="#6B46C1"
       color="white"
-      textAlign={{ base: "left", md: "right", lg: "center" }}
+      textAlign={{ base: "left", md: "left", lg: "center" }}
       pl="15px"
     >
       <Heading pt="90px">Simple pricing for your business</Heading>
