@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 
 import Navbar from "@/components/Navbar";
 import Prac2 from "@/components/Prac2";
-import Prac4 from "@/components/Prac4";
+import Prac3 from "@/components/Prac3";
 
 import { ChakraProvider, Divider } from "@chakra-ui/react";
 
@@ -19,7 +19,8 @@ export default function Page() {
       <Divider />
 
       {/* <Cards /> */}
-      <Prac4 />
+      <Prac3 />
+      <Divider />
       <Footer />
     </ChakraProvider>
   );

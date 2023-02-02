@@ -9,14 +9,14 @@ export default function Navbar() {
         <Flex justifyContent={"space-between"} flex="1">
           <HStack spacing={"10"} py="2">
             <Link fontWeight={"500"} _hover={{ color: "orange" }}>
-              Docs
+              How it works
             </Link>
 
             <Link fontWeight={"500"} _hover={{ color: "orange" }}>
-              Link2
+              WIT
             </Link>
             <Link fontWeight={"500"} _hover={{ color: "orange" }}>
-              Link3
+              Available Programs
             </Link>
           </HStack>
           <HStack>
