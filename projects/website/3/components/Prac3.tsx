@@ -46,7 +46,7 @@ export default function Prac3() {
   ];
   return (
     <Box>
-      <Flex justifyContent={"space-between"} mx="10px">
+      <Flex justifyContent={"space-between"} mx="8px">
         {/* box1 */}
         <Box pr={"5px"}>
           {" "}
