@@ -18,10 +18,11 @@ export default function Page() {
       <Header />
       <Divider />
 
-      {/* <Cards /> */}
       <Prac3 />
       <Divider />
       <Footer />
+
+      {/* <Prac2 /> */}
     </ChakraProvider>
   );
 }
