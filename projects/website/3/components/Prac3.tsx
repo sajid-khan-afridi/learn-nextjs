@@ -46,7 +46,11 @@ export default function Prac3() {
   ];
   return (
     <Box>
-      <Flex justifyContent={"space-between"} mx="8px">
+      <Flex
+        justifyContent={"space-between"}
+        mx="8px"
+        flexDirection={{ base: "column", md: "column", lg: "row" }}
+      >
         {/* box1 */}
         <Box pr={"5px"}>
           {" "}
