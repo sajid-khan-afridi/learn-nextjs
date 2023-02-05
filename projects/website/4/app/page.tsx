@@ -22,7 +22,7 @@ export default function Page() {
             height="500"
           />
         </Box>
-        <Box maxW={[""]}>
+        <Box>
           <Heading
             fontSize={["4xl", "4xl", "6xl"]}
             fontWeight={["bold", "bold", "extrabold"]}
