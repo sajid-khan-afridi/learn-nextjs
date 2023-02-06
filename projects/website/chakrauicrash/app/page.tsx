@@ -8,6 +8,7 @@ import Lesson2 from "@/components/course/Lesson2";
 
 import { Divider } from "@chakra-ui/react";
 import Lesson3a from "@/components/course/Lesson3a";
+import Navbar from "@/components/course/Navbar";
 
 export default function page() {
   return (
@@ -18,6 +19,8 @@ export default function page() {
       <Lesson2 />
       <Divider />
       <Lesson3a />
+      <Divider />
+      <Navbar />
     </>
   );
 }
