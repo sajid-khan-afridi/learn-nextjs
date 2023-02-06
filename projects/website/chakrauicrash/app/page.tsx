@@ -9,6 +9,7 @@ import Lesson2 from "@/components/course/Lesson2";
 import { Divider } from "@chakra-ui/react";
 import Lesson3a from "@/components/course/Lesson3a";
 import Navbar from "@/components/course/Navbar";
+import FlexBoxCard from "@/components/FlexBoxCard";
 
 export default function page() {
   return (
@@ -21,6 +22,8 @@ export default function page() {
       <Lesson3a />
       <Divider />
       <Navbar />
+      <FlexBox2 />
+      <FlexBoxCard />
     </>
   );
 }
