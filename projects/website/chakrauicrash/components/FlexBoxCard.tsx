@@ -1,6 +1,7 @@
 import { Box, Stack } from "@chakra-ui/react";
 import React from "react";
 import Card1 from "./Card1";
+import Card2 from "./Card2";
 
 export default function FlexBoxCard() {
   return (
@@ -24,7 +25,7 @@ export default function FlexBoxCard() {
 
         color="white"
       >
-        <Card1 />
+        <Card2 />
         Box1 text aligning{" "}
       </Box>
       <Box w={250} h={250} bg={"red"} color="white">

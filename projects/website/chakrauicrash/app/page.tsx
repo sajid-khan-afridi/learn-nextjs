@@ -10,6 +10,7 @@ import { Divider } from "@chakra-ui/react";
 import Lesson3a from "@/components/course/Lesson3a";
 import Navbar from "@/components/course/Navbar";
 import FlexBoxCard from "@/components/FlexBoxCard";
+import Card2 from "@/components/Card2";
 
 export default function page() {
   return (
