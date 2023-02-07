@@ -50,6 +50,8 @@ export default function Prac3() {
         justifyContent={"space-between"}
         mx="8px"
         flexDirection={{ base: "column", md: "column", lg: "row" }}
+        wrap="wrap"
+        gap={"2px"}
       >
         {/* box1 */}
         <Box pr={"5px"}>
