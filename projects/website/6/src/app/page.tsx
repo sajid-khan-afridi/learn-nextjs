@@ -1,7 +1,11 @@
 "use client";
-import React from "react";
-import { Heading } from "@chakra-ui/react";
+
+import { Grid, Heading } from "@chakra-ui/react";
 
 export default function page() {
-  return <Heading>Home Page</Heading>;
+  return (
+    <>
+      <Heading>Home Page</Heading>
+    </>
+  );
 }
