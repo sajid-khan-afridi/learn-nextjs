@@ -5,7 +5,7 @@ import logo from "../../../public/images/panaverse-logo.png";
 export default function Footer() {
   return (
     <Container maxW={1440} mx="auto" mt={70} bg="teal.800" color="gray.200">
-      <SimpleGrid templateColumns={"repeat(4,1fr)"} py="50">
+      <SimpleGrid spacing={30} templateColumns={"repeat(4,1fr)"} py="50">
         <Box>
 
         <Box borderLeft="5px solid #a41e1e">
@@ -28,7 +28,17 @@ export default function Footer() {
           
         </Box>
 
-        <Box></Box>
+        <Box>
+       <Box borderLeft="5px solid #a41e1e">
+        <Heading pl={5}>
+        USEFUL LINKS</Heading>
+        </Box> 
+Home
+Syllabus
+Explore
+About
+Contact
+        </Box>
         <Box>3</Box>
         <Box>4</Box>
       </SimpleGrid>
