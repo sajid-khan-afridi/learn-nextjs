@@ -12,7 +12,7 @@ export default function CardsArea() {
         pb={"10"}
       >
         <Box borderLeft={"10px solid #a41e1e"}>
-          <Heading>Our Top Courses</Heading>
+          <Heading pl={5}>Our Top Courses</Heading>
         </Box>
       </Box>
       <Cards />
