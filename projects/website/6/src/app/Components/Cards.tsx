@@ -33,7 +33,7 @@ export default function Cards() {
           <Box borderBottom={"5px solid #a41e1e"}>
             <Heading pl="5">Metaverse</Heading>
           </Box>
-          <Text>
+          <Text fontSize={{base:"15",md:"15",lg:"15"}}>
             Panaverse DAO is a community of Web 3 and Metaverse developers,
             designers, trainers, startup founders and service providers.
             Panaverse DAO is struggling to produce professionals.
