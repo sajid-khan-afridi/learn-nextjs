@@ -1,7 +1,5 @@
 import { Box, Container, SimpleGrid, Image } from "@chakra-ui/react";
 
-import zia from "../../../public/images/zia.jpg";
-
 export default function MiniCards() {
   return (
     <Container
