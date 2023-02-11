@@ -9,14 +9,18 @@ export default function Footer() {
       maxW={1440}
       // mx="auto"
       p={50}
-      mt={70}
+      // mt={70}
       bg="teal.800"
       color="gray.200"
     >
       <SimpleGrid
         // spacingX={10}
         spacing="20"
-        templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(4,1fr)"}}
+        templateColumns={{
+          base: "repeat(1,1fr)",
+          md: "repeat(2,1fr)",
+          lg: "repeat(4,1fr)",
+        }}
         py="50"
         //
         minChildWidth="400"

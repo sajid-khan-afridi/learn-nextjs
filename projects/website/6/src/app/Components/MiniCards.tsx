@@ -15,19 +15,27 @@ export default function MiniCards() {
       // mx="auto"
       p={50}
       mt={70}
-      // bg="teal.800"
+      // bgImage="./images/flag.jpg"
+      // backgroundRepeat={"no-repeat"}
+      // backgroundSize="cover"
+      // opacity={"0.3"}
+      // color="green.100"
 
-      color="gray.200"
+      // bg="teal.500"
+      // color="gray.200"
+
+      color="blackAlpha.800"
     >
       <SimpleGrid
         // spacingX={10}
         spacing="20"
         templateColumns={{
-          base: "repeat(2,1fr)",
-          md: "repeat(3,1fr)",
+          base: "repeat(1,1fr)",
+
+          md: "repeat(2,1fr)",
           lg: "repeat(5,1fr)",
         }}
-        py="50"
+        // py="50"
         //
         minChildWidth="400"
       >
