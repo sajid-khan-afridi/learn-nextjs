@@ -1,7 +1,17 @@
-import { Box, Container, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  HStack,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/images/panaverse-logo.png";
+// import { BiPhone, BiMailSend } from "react-icons/bi";
+import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
 export default function Footer() {
   return (
@@ -51,7 +61,8 @@ export default function Footer() {
         <Box height={"250px"}>
           <Box borderLeft="5px solid #a41e1e">
             <Heading pl={5} fontSize={30}>
-              USEFUL LINKS
+              {/* USEFUL LINKS */}
+              Useful links
             </Heading>
           </Box>
           <Box>
@@ -83,7 +94,8 @@ export default function Footer() {
           <Box height={"250px"}>
             <Box borderLeft="5px solid #a41e1e">
               <Heading pl={5} fontSize={30}>
-                FOLLOW US
+                {/* FOLLOW US */}
+                Follow us
               </Heading>
             </Box>
             <Box>
@@ -119,20 +131,31 @@ export default function Footer() {
         <Box height={"250px"}>
           <Box borderLeft="5px solid #a41e1e">
             <Heading pl={5} fontSize={30}>
-              CONTACT US
+              {/* CONTACT US */}
+              Contact us
             </Heading>
           </Box>
           <Box>
             <br />
+            <Flex pb={1} gap="3">
+              <Box mt="-1" fontSize={"20"}>
+                {/* <BiPhone /> */}
+                <PhoneIcon />
+              </Box>
+              +92 123 4567890
+              <br />
+            </Flex>
             <Box pb={1}>
-              Phone#: +92 123 4567890
+              <Flex gap="4">
+                <Box mt="-1" fontSize={"20"}>
+                  {/* <BiMailSend /> */}
+                  <EmailIcon />
+                </Box>
+                abcdefghi@gmail.com
+              </Flex>
               <br />
             </Box>
-            <Box pb={1}>
-              Email: abcdefghi@gmail.com
-              <br />
-            </Box>
-            <Box pb={1}>
+            <Box pb={1} mt="-5">
               Peshawar, Pakistan. <br />
             </Box>
           </Box>
