@@ -5,12 +5,12 @@ import MiniCards from "./MiniCards";
 export default function MiniCardArea() {
   return (
     <Container maxW={1440} mt="100">
-      <VStack>
+      <Box ml={{ base: "0", md: "0", lg: "30%" }}>
         <Box borderLeft={"10px solid #a41e1e"}>
           <Heading pl={5}>Our Instructors</Heading>
         </Box>
-        <MiniCards />
-      </VStack>
+      </Box>
+      <MiniCards />
     </Container>
   );
 }

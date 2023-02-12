@@ -19,7 +19,7 @@ export default function Hero() {
         <Stack
           // a
           align={"center"}
-          spacing={"50"}
+          // spacing={"50"}
           direction={{ base: "column", md: "column", lg: "row" }}
         >
           <Box maxW={"300"}>
@@ -30,7 +30,13 @@ export default function Hero() {
               alt="president image"
             />
           </Box>
-          <Box px={"20"} maxW="900" mx="auto">
+          <Box
+            px={{ base: "0", md: "10", lg: "20" }}
+            maxW="900"
+            // mx={"auto"}
+
+            //
+          >
             <Box borderLeft={"10px solid #a41e1e"}>
               <Heading pl="5">Program Of Studies</Heading>
             </Box>

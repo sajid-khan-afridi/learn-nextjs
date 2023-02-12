@@ -14,7 +14,8 @@ export default function MiniCards() {
       maxW={1440}
       // mx="auto"
       p={50}
-      mt={70}
+      // mt={50}
+      mt={{ base: "0", md: "20", lg: "50" }}
       // bgImage="./images/flag.jpg"
       // backgroundRepeat={"no-repeat"}
       // backgroundSize="cover"
@@ -76,7 +77,7 @@ export default function MiniCards() {
               alt="Madam Hira Khan"
               src="./images/hirakhan.jpg"
             />
-            <Heading fontSize={"20"}>Daniyal Nagori</Heading>
+            <Heading fontSize={"20"}>Hira Khan</Heading>
             <Text align={"center"}>
               Panaverse DAO is a community of Web 3 and Metaverse developers,
               designers, trainers, startup founders
