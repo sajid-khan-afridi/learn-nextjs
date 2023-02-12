@@ -1,10 +1,10 @@
 "use client";
 import {
   HamburgerIcon,
-  AddIcon,
-  EditIcon,
-  ExternalLinkIcon,
-  RepeatIcon,
+  // AddIcon,
+  // EditIcon,
+  // ExternalLinkIcon,
+  // RepeatIcon,
 } from "@chakra-ui/icons";
 
 import {
@@ -36,8 +36,10 @@ export default function NavBar() {
         mx="auto"
       >
         <SimpleGrid templateColumns={"repeat(3,1fr)"}>
-          <Box>
-            <Image src={logo} alt="logo" height={"80"} width={"80"} />
+          <Box mt={["3", "0", "0"]}>
+            <Link href={"/"}>
+              <Image src={logo} alt="logo" height={"80"} width={"80"} />
+            </Link>
           </Box>
 
           {/* Hide */}
@@ -52,11 +54,51 @@ export default function NavBar() {
               // gap={{ base: "2", md: "4", lg: "8" }}
               // fontSize={{ base: "12", md: "15", lg: "18" }}
             >
-              <Link href={"/"}>Home</Link>
-              <Link href={"/syllabus"}>Syllabus</Link>
-              <Link href={"/explore"}>Explore</Link>
-              <Link href={"/about"}>About</Link>
-              <Link href={"/contact"}>Contact</Link>
+              <Box
+                _hover={{
+                  background: "white",
+                  color: "teal.500",
+                  fontWeight: "bold",
+                }}
+              >
+                <Link href={"/"}>Home</Link>
+              </Box>
+              <Box
+                _hover={{
+                  background: "white",
+                  color: "teal.500",
+                  fontWeight: "bold",
+                }}
+              >
+                <Link href={"/syllabus"}>Syllabus</Link>
+              </Box>
+              <Box
+                _hover={{
+                  background: "white",
+                  color: "teal.500",
+                  fontWeight: "bold",
+                }}
+              >
+                <Link href={"/explore"}>Explore</Link>
+              </Box>
+              <Box
+                _hover={{
+                  background: "white",
+                  color: "teal.500",
+                  fontWeight: "bold",
+                }}
+              >
+                <Link href={"/about"}>About</Link>
+              </Box>
+              <Box
+                _hover={{
+                  background: "white",
+                  color: "teal.500",
+                  fontWeight: "bold",
+                }}
+              >
+                <Link href={"/contact"}>Contact</Link>
+              </Box>
             </Flex>
             <Box pt={1} float="right">
               <Button float={"right"} colorScheme={"teal"}>
@@ -78,17 +120,20 @@ export default function NavBar() {
                   variant="outline"
                 />
                 <MenuList>
-                  <MenuItem icon={<AddIcon />} command="⌘T">
-                    New Tab
+                  <MenuItem>
+                    <Link href={"/"}>Home</Link>
                   </MenuItem>
-                  <MenuItem icon={<ExternalLinkIcon />} command="⌘N">
-                    New Window
+                  <MenuItem>
+                    <Link href={"/syllabus"}>Syllabus</Link>
                   </MenuItem>
-                  <MenuItem icon={<RepeatIcon />} command="⌘⇧N">
-                    Open Closed Tab
+                  <MenuItem>
+                    <Link href={"/explore"}>Explore</Link>
                   </MenuItem>
-                  <MenuItem icon={<EditIcon />} command="⌘O">
-                    Open File...
+                  <MenuItem>
+                    <Link href={"/about"}>About</Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link href={"/contact"}>Contact</Link>
                   </MenuItem>
                 </MenuList>
               </Menu>
