@@ -1,11 +1,5 @@
-import {
-  Box,
-  Button,
-  Container,
-  Heading,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Container, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import React from "react";
 
 export default function Syllabus1() {
   const commonInAll = [
@@ -25,29 +19,12 @@ export default function Syllabus1() {
   return (
     <Container maxW={1100} my="10">
       <SimpleGrid
-        //
         minChildWidth="255px"
         spacing="40px"
-        // column={"3"}
-        // spacingX="40px"
-        // spacingY="20px"
-        // templateRows={"auto"}
-        gridTemplateRows={"min-content"}
+        style={{ gridTemplateRows: "auto", gridAutoRows: "auto" }}
       >
-        {/* {["Metaverse", "Blockchain", "Typescript"].map((title) => ( */}
         {commonInAll.map((item) => (
-          <Box
-            key={item.title}
-            boxShadow={"dark-lg"}
-            // height={{ base: "250px", md: "280px", lg: "250px" }}
-            borderRadius={20}
-            p="5"
-            // overflow={"hidden"}
-            // overflowWrap="break-word"
-            // wordBreak={"break-all"}
-            // gridTemplateRows={"min-content"}
-            // minHeight={"auto"}
-          >
+          <Box key={item.title} boxShadow={"dark-lg"} borderRadius={20} p="5">
             <Box borderBottom={"5px solid #a41e1e"}>
               <Heading pl="5">{item.title}</Heading>
             </Box>
