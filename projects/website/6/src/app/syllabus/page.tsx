@@ -1,11 +1,13 @@
 "use client";
-import Syllabus1 from "../Components/Syllabus1";
+
 import SyllabusArea1 from "../Components/SyllabusArea1";
+import SyllabusArea2 from "../Components/SyllabusArea2";
 
 export default function page() {
   return (
     <>
       <SyllabusArea1 />
+      <SyllabusArea2 />
     </>
   );
 }
