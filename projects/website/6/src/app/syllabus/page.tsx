@@ -7,6 +7,7 @@ export default function page() {
   return (
     <>
       <SyllabusArea1 />
+      {/* <SyllabusArea2 /> */}
       <SyllabusArea2 />
     </>
   );
