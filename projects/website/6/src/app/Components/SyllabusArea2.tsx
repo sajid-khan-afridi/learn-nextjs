@@ -118,7 +118,7 @@ export default function SyllabusArea2() {
     <Container maxW="1440" mt="5">
       {/* section1 */}
 
-      <Box ml={{ base: "0", md: "0", lg: "30%" }} mt="10">
+      <Box ml={{ base: "0", md: "0", lg: "30%" }} mt="40">
         <Box borderLeft={"10px solid #a41e1e"}>
           <Heading pl={5}>Specialized Tracks</Heading>
         </Box>
@@ -134,7 +134,7 @@ export default function SyllabusArea2() {
       {/* dynamic contents*/}
       {element.map((item)=>(
         <>
-        <Box ml={{ base: "0", md: "0", lg: "10%" }} mt="10">
+        <Box ml={{ base: "0", md: "0", lg: "10%" }} mt="20">
         <Box borderLeft={"10px solid #a41e1e"}>
           <Heading pl={5}>{item.Heading}</Heading>
         </Box>
