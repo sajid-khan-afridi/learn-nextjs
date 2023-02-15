@@ -101,9 +101,12 @@ export default function NavBar() {
               </Box>
             </Flex>
             <Box pt={1} float="right">
+            {/* https://portal.piaic.org/ */}
+            <Link href={"https://portal.piaic.org/"}>
               <Button float={"right"} colorScheme={"teal"}>
                 Apply
               </Button>
+            </Link>
             </Box>
           </Hide>
 

@@ -10,6 +10,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 import pic from "../../../public/images/president.png";
 
 export default function Hero() {
@@ -49,8 +50,10 @@ export default function Hero() {
               The emphasis will be on hands-on learning by educating students to
               produce projects.
             </Text>
+            <Link href={"/syllabus"}>
 
             <Button colorScheme={"teal"}>Read More</Button>
+            </Link>
           </Box>
         </Stack>
       </Box>

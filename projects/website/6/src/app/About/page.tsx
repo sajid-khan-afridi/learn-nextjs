@@ -11,6 +11,7 @@ export default function page() {
     {
       image:president,
       heading:"Dr. Arif Alvi",
+
       text:`
       
       Dr. Arif Alvi was sworn in as the 13th President of Islamic Republic of Pakistan on 9th September 2018.
@@ -44,7 +45,7 @@ export default function page() {
   ]
   return (
     <>
-      <Container maxW="1440" mt="5">
+      <Container maxW="1440" my="10" >
         {/* section1 */}
         <Box>
           <Box color={"#a41e1e"} borderLeft={"10px solid #a41e1e"} mt="10">
@@ -53,11 +54,12 @@ export default function page() {
         </Box>
         {arr.map((item)=>(
 
-          <Flex mt="20">
-          <Box flexBasis={"50%"} order={item.order}>
-            <Image src={item.image} alt="president picture" />
+          <Flex mt="20"  direction={{base:"column",lg:"row"}}>
+          {/* <Box flexBasis={{lg:"30%"}} order={item.order}> */}
+          <Box flexBasis={{lg:"30%"}} order={{lg:item.order}}>
+            <Image src={item.image} alt={item.heading} />
           </Box>
-          <Box flexBasis={"50%"} order="1">
+          <Box flexBasis={{lg:"70%"}} order="1" px={{lg:"10"}}>
             <Box borderLeft={"10px solid #a41e1e"} mt="10">
               <Heading pl={5}>{item.heading}</Heading>
             </Box>
