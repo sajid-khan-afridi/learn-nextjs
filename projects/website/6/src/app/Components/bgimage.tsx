@@ -1,12 +1,12 @@
-import { Box, Container, Image } from "@chakra-ui/react";
+import { Box, Container, Heading, Image, Text } from "@chakra-ui/react";
 
 export default function BgImage(prop:any) {
-    const {img,alt,title}=prop;
+    const {src,title}=prop;
   return (
-   <Container maxW={"1440"}>
-        <Box bgImage={img}>
-            
-        </Box>
+        <Box bgImage={src} bgSize="cover" py="200" bgAttachment={"fixed"}>
+   <Container maxW={"1100"}>
+            <Heading color={"whiteAlpha.700"}>{title}</Heading>
    </Container>
+        </Box>
   )
 }
