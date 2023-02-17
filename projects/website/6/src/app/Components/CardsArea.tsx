@@ -11,7 +11,7 @@ export default function CardsArea() {
         mx="auto"
         pb={"10"}
       >
-        <Box borderLeft={"10px solid #a41e1e"}>
+        <Box ml={{base:"5"}} borderLeft={"10px solid #a41e1e"}>
           <Heading pl={5}>Our Top Courses</Heading>
         </Box>
       </Box>
